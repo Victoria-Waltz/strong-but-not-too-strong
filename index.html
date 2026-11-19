@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A podcast exploring women, strength, and the weight room.">
+  <title>Strong, But Not ‘Too Strong’</title>
+  <link rel="icon" href="assets/icons/headphones.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,700;1,800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script type="module" src="js/episodes.js"></script>
+</head>
+<body class="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Strong, But Not ‘Too Strong’ home">
+        <img src="assets/icons/headphones.svg" alt="">
+        <span>The Podcast</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="episodes.html">Episodes</a>
+        <a href="about.html">About</a>
+        <a href="project.html">The Project</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+  <section class="hero" aria-labelledby="series-title">
+    <div class="hero-copy">
+      <h1 id="series-title"><span>Strong, But Not</span><em>‘Too Strong’</em></h1>
+      <div class="hero-divider" aria-hidden="true"><img src="assets/icons/barbell.svg" alt=""></div>
+      <p>A podcast exploring women, strength,<br class="desktop-break"> and the weight room.</p>
+      <img class="hero-wave" src="assets/icons/waveform.svg" alt="">
+      <div class="hero-actions">
+        <a class="button" href="episodes.html">Explore Episodes <span class="play-icon" aria-hidden="true"></span></a>
+        <a class="hero-link" href="project.html">About the Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section intro wrap" data-reveal>
+    <p class="eyebrow">A Temple University Honors Senior Project</p>
+    <h2>Strength Is More Than What You Lift.</h2>
+    <p>What does it feel like to walk into a weight room and wonder whether you belong? In this series, Victoria Waltz explores women’s relationship with lifting, the expectations that shape gym culture, and what it takes to feel at home in spaces long dominated by men.</p>
+  </section>
+
+  <section class="section tint" aria-labelledby="featured-title" data-reveal>
+    <div class="wrap">
+      <div class="section-header"><h2 id="featured-title">Featured Episodes</h2><a class="text-link" href="episodes.html">View All Episodes <span aria-hidden="true">→</span></a></div>
+      <div class="card-grid" data-episodes="featured"></div>
+      <noscript><p>Enable JavaScript to browse the episode previews.</p></noscript>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="topics-title" data-reveal>
+    <h2 id="topics-title">What We Explore</h2>
+    <div class="topic-grid">
+      <article><img src="assets/icons/barbell.svg" alt=""><h3>Gym Culture</h3><p>What makes walking into a weight room feel intimidating or welcoming.</p></article>
+      <article><span aria-hidden="true">✦</span><h3>Confidence &amp; Empowerment</h3><p>How getting stronger can change the way you see yourself.</p></article>
+      <article><img src="assets/icons/waveform.svg" alt=""><h3>Social Media</h3><p>How fitness feeds shape expectations about our bodies and training.</p></article>
+      <article><span aria-hidden="true">◷</span><h3>Women’s Fitness History</h3><p>How ideas about women and strength have changed over time.</p></article>
+      <article><span aria-hidden="true">♡</span><h3>Mental Health</h3><p>The relationship between lifting, self-image, and well-being.</p></article>
+      <article><img src="assets/icons/headphones.svg" alt=""><h3>Community &amp; Belonging</h3><p>What support and representation can mean in a shared gym space.</p></article>
+    </div>
+  </section>
+
+  <section class="section closing" data-reveal>
+    <div class="wrap"><h2>Find Your Place in the Weight Room.</h2><a class="button" href="episodes.html">Explore the Series <span aria-hidden="true">→</span></a></div>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div><a class="footer-brand" href="index.html">Strong, But Not ‘Too Strong’</a><p>Victoria Waltz · Temple University Honors Senior Project</p></div>
+      <a class="footer-link" href="contact.html">Get in Touch <span aria-hidden="true">↗</span></a>
+    </div>
+  </footer>
+</body>
+</html>
