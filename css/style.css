@@ -122,6 +122,18 @@ p + p { margin-top: 1rem; }
 .creator-panel { min-width: 0; overflow-wrap: break-word; }
 .creator-panel .creator-name { font: 700 1.55rem/1.12 var(--serif); letter-spacing: -.025em; }
 .creator-panel .creator-role { margin-top: .5rem; }
+.creator-panel .creator-scroll-hint { display: none; }
+@media (min-width: 701px) {
+  .creator-panel .creator-scroll-hint { display: block; color: var(--muted); font-size: .875rem; }
+  .creator-scroll {
+    max-height: clamp(15rem, 48vh, 28rem);
+    margin-top: .65rem;
+    padding-inline-end: .65rem;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+  .creator-scroll > .creator-bio:first-child { margin-top: 0; }
+}
 .creator-bio {
   max-width: 62ch;
   margin-top: 1.6rem;
