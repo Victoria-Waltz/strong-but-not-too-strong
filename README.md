@@ -6,7 +6,7 @@ Victoria Waltz’s Temple University Honors Senior Project is a podcast mini-ser
 
 1. Clone the repository and open its folder in VS Code.
 2. Open `index.html` with the Live Server extension. Alternatively, from the repository root, run `python -m http.server 8000` and visit `http://localhost:8000`.
-3. Use the navigation to visit all five sections. Open an episode card to see its detail page and player.
+3. Use the navigation to visit each section. Open an episode card to see its detail page and player.
 
 ## Add an episode recording
 
@@ -20,7 +20,6 @@ The same list controls episode titles, summaries, and detail text. An empty `aud
 
 - **Creator introduction** — Replace the placeholder in `about.html`.
 - **Sources and interview material** — Update the two placeholders in `project.html` with finalized content.
-- **Contact email** — Set `CONTACT_EMAIL` near the top of `js/main.js` to the email address you want visitors to see. The form opens a draft in their email app.
 
 ## Publish with GitHub Pages
 
