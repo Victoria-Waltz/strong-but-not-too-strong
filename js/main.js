@@ -1,6 +1,3 @@
-// Set this to your preferred public contact address when you are ready.
-const CONTACT_EMAIL = "";
-
 const menu = document.querySelector(".menu-toggle");
 const header = document.querySelector(".site-header");
 const nav = document.querySelector("#site-nav");
@@ -43,28 +40,4 @@ if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: re
     }
   }, { threshold: 0.08 });
   document.querySelectorAll("[data-reveal]").forEach((section) => observer.observe(section));
-}
-
-const form = document.querySelector("[data-contact-form]");
-if (form) {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    if (!CONTACT_EMAIL) return;
-
-    const fields = new FormData(form);
-    const subject = encodeURIComponent("Strong, But Not ‘Too Strong’ — Podcast inquiry");
-    const body = encodeURIComponent(
-      `${fields.get("message")}\n\nFrom ${fields.get("name")} (${fields.get("email")})`
-    );
-    location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-  });
-
-  if (CONTACT_EMAIL) {
-    const email = document.createElement("a");
-    email.href = `mailto:${CONTACT_EMAIL}`;
-    email.textContent = CONTACT_EMAIL;
-    document.querySelector("[data-contact-email]").replaceChildren(email);
-    form.querySelector("#contact-status").textContent = "Your email app will open a draft. You can review it there before sending.";
-    form.querySelector("button[type=submit]").disabled = false;
-  }
 }

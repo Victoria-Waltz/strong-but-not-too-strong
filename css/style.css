@@ -105,7 +105,6 @@ p + p { margin-top: 1rem; }
 .site-footer { padding: 2rem 0; border-top: 1px solid #59444a; }
 .footer-brand { font-family: var(--serif); font-size: 1.3rem; text-decoration: none; }
 .footer-inner p { color: #dfc7ce; font-size: .85rem; }
-.footer-link { color: var(--blush); white-space: nowrap; text-underline-offset: .22em; }
 .page-banner { background: radial-gradient(ellipse at 90% 100%, #74444d, transparent 68%), #2d2426; color: var(--cream); padding-block: clamp(3.7rem, 9vw, 7rem); }
 .page-banner .eyebrow, .back-link { color: var(--blush); }
 .page-banner p:not(.eyebrow) { margin-top: 1.2rem; font-size: clamp(1rem, 2vw, 1.25rem); max-width: 58ch; }
@@ -198,11 +197,7 @@ p + p { margin-top: 1rem; }
 }
 .interview-material > .text-link { justify-self: start; }
 .question blockquote { margin: 1.3rem 0 0; font: italic clamp(1.5rem, 4vw, 2.6rem)/1.25 var(--serif); max-width: 36ch; }
-.contact-form { display: grid; gap: .65rem; }
-.contact-form label { font-weight: 600; margin-top: .25rem; }
-.contact-form input, .contact-form textarea, .player select { width: 100%; padding: .55rem .7rem; border: 1px solid #a97f8a; border-radius: .45rem; background: var(--cream); color: var(--charcoal); }
-.contact-form textarea { resize: vertical; }
-.contact-form .button { justify-self: start; }
+.player select { width: 100%; padding: .55rem .7rem; border: 1px solid #a97f8a; border-radius: .45rem; background: var(--cream); color: var(--charcoal); }
 .player-wrap { max-width: 790px; }
 .player-wrap .player { margin-top: 1.75rem; }
 .player-status { color: var(--muted); }
