@@ -120,6 +120,22 @@ p + p { margin-top: 1rem; }
 .placeholder { padding-top: .8rem; border-top: 1px solid #d6afb9; color: var(--muted); }
 .creator-role { font-weight: 700; color: var(--ink-rose); }
 .research { display: grid; gap: clamp(2rem, 5vw, 3.75rem); }
+.references-banner h1 { overflow-wrap: anywhere; }
+.reference-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.reference-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .8rem;
+  padding: clamp(1.3rem, 3vw, 2rem);
+  background: var(--cream);
+  transition: border-color .18s, background-color .18s;
+}
+.reference-card:is(:hover, :focus-within) { border-color: var(--rose); background: var(--tint); }
+.reference-card :is(h3, p) { margin: 0; }
+.reference-card .reference-details { color: var(--muted); font-size: .94rem; }
+.reference-card .text-link { margin-top: auto; }
+.reference-card .new-tab { font-size: .85em; font-weight: 500; }
 .question blockquote { margin: 1.3rem 0 0; font: italic clamp(1.5rem, 4vw, 2.6rem)/1.25 var(--serif); max-width: 36ch; }
 .contact-form { display: grid; gap: .65rem; }
 .contact-form label { font-weight: 600; margin-top: .25rem; }
@@ -163,7 +179,7 @@ p + p { margin-top: 1rem; }
   .hero-divider { margin-top: 1.45rem; }
   .hero-wave { margin-bottom: 1rem; }
   .card-grid, .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .two-columns { grid-template-columns: 1fr; }
+  .two-columns, .reference-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 465px) {
   .wrap { width: calc(100% - 2rem); }
