@@ -136,6 +136,38 @@ p + p { margin-top: 1rem; }
 .reference-card .reference-details { color: var(--muted); font-size: .94rem; }
 .reference-card .text-link { margin-top: auto; }
 .reference-card .new-tab { font-size: .85em; font-weight: 500; }
+.interview-material {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: clamp(1.65rem, 4vw, 2.75rem);
+}
+.interview-material > h2 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d6afb9;
+}
+.interview-material h3 { margin-top: 0; }
+.interview-overview p, .interview-reflection p { max-width: 69ch; }
+.interview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.interview-card, .interview-reflection { background: var(--cream); }
+.interview-card { padding: 1rem 1.15rem; }
+.interview-card h4 { margin: 0; }
+.interview-card h4:not(.badge) { font: 700 1.2rem/1.25 var(--serif); }
+.interview-card p { margin-top: .55rem; }
+.interview-reflection .interview-takeaway {
+  max-width: 36ch;
+  padding-top: 1rem;
+  border-top: 1px solid #d6afb9;
+  color: var(--ink-rose);
+  font: clamp(1.35rem, 3vw, 2rem)/1.32 var(--serif);
+}
+.interview-material > .text-link { justify-self: start; }
 .question blockquote { margin: 1.3rem 0 0; font: italic clamp(1.5rem, 4vw, 2.6rem)/1.25 var(--serif); max-width: 36ch; }
 .contact-form { display: grid; gap: .65rem; }
 .contact-form label { font-weight: 600; margin-top: .25rem; }
@@ -179,7 +211,7 @@ p + p { margin-top: 1rem; }
   .hero-divider { margin-top: 1.45rem; }
   .hero-wave { margin-bottom: 1rem; }
   .card-grid, .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .two-columns, .reference-grid { grid-template-columns: 1fr; }
+  .two-columns, .reference-grid, .interview-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 465px) {
   .wrap { width: calc(100% - 2rem); }
